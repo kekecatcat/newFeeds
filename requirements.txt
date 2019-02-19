@@ -1,0 +1,11 @@
+Flask
+Flask-JSONRPC
+jsonrpcclient[requests]
+newspaper3k
+pika
+pymongo
+python-dateutil
+python-jsonrpc
+redis
+requests
+scikit-learn

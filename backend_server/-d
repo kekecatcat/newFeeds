@@ -1,0 +1,18 @@
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 1538
+Server: Werkzeug/0.14.1 Python/3.7.2
+Date: Tue, 05 Feb 2019 22:03:41 GMT
+
+{
+  "error": {
+    "code": -32700, 
+    "data": null, 
+    "executable": "/usr/local/opt/python/bin/python3.7", 
+    "message": "ParseError: Expecting value: line 1 column 1 (char 0)", 
+    "name": "ParseError", 
+    "stack": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.7/site-packages/flask_jsonrpc/site.py\", line 374, in dispatch\n    D = json.loads(raw_data)\n  File \"/usr/local/lib/python3.7/site-packages/flask/json/__init__.py\", line 205, in loads\n    return _json.loads(s, **kwargs)\n  File \"/usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py\", line 361, in loads\n    return cls(**kw).decode(s)\n  File \"/usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.7/site-packages/flask_jsonrpc/site.py\", line 376, in dispatch\n    raise ParseError(getattr(e, 'message', e.args[0] if len(e.args) > 0 else None))\nflask_jsonrpc.exceptions.ParseError\n"
+  }, 
+  "id": null, 
+  "jsonrpc": "2.0"
+}
